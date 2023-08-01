@@ -1,0 +1,18 @@
+.cardSkeletonContainer {
+    --width: 250px;
+    --height: 300px;
+    display: flex;
+    width: 250px;
+    height: 300px;
+    border-radius: 5%;
+    opacity: 0.5;
+    margin: calc(0.2*var(--width)) calc(0.2*var(--width)) calc(0.2*var(--width)) calc(0.2*var(--width));
+}
+.Container{
+    flex: 1;
+}
+
+.Card{
+    margin-bottom: 0.6rem;
+    height: 3rem;
+}

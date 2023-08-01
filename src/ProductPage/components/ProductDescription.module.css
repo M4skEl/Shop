@@ -1,0 +1,14 @@
+.name {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0 0 2% 0;
+}
+
+.description {
+    font-size: 2rem;
+    margin: 2% 0 2% 0;
+}
+
+.stock {
+    font-family: 'Cremona', sans-serif;
+}

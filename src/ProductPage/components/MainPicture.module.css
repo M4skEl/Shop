@@ -1,0 +1,8 @@
+.mainPicture{
+    border-radius: 5%;
+    --picture-height: 150px;
+    --picture-width: 150px;
+    max-height: calc(3.5*var(--picture-height));
+    min-width: calc(3.5*var(--picture-width));;
+
+}

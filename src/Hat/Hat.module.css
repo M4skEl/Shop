@@ -1,0 +1,82 @@
+
+.hatContainer {
+    display: block;
+
+
+
+}
+
+.topContainer {
+    height: 40vh;
+    width: 100%;
+
+
+}
+
+.hatSloganCont {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background: linear-gradient(40deg, rgba(33, 112, 116, 0.8) 0%, rgba(55, 116, 91, 0.8) 65%, rgba(108, 118, 96, 0.9) 100%);
+
+}
+
+
+.headerText {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", "Montserrat", sans-serif;
+    color: white;
+    font-size: 450%;
+}
+
+.photoContainer {
+    width: 100%;
+    height: calc(0.8 * 50vh);
+
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+
+.photo {
+    overflow: hidden;
+    mix-blend-mode: darken;;
+
+
+}
+
+.hatBar {
+    margin: 2rem 0 2rem 0;
+    background-color: white;
+    height: 7vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation {
+
+    margin-left: 5%;
+    display: flex;
+
+}
+
+.searchBar {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    align-items: center;
+    position: relative;
+}

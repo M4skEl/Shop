@@ -1,0 +1,49 @@
+.radio {
+    --picture-height: 150px;
+    --picture-width: 150px;
+    width: calc(1.1 * var(--picture-width));
+    height: calc(3 * var(--picture-height));
+    min-width: calc(1.1 * var(--picture-width));
+    min-height: calc(3 * var(--picture-height));
+    margin: 0 5% 0 0;
+    padding: 0.5% 1% 0 1%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+.radio::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+.radio::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+
+.radio::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(rgba(33, 112, 116, 1), rgba(55, 116, 91, 1))
+}
+
+.radioPoint {
+    position: absolute;
+    opacity: 0;
+
+}
+
+.radioPoint:checked + label > img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px 3px #37745B;
+
+}
+
+.radioPicture {
+    cursor: pointer;
+    width: var(--picture-width);
+    height: var(--picture-height);
+    border-radius: 5%;
+    margin-bottom: 2%;
+}

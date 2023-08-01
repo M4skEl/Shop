@@ -1,0 +1,189 @@
+
+.mainContainer {
+    --width: 250px;
+    --height: 300px;
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    border-radius: 5%;
+    transition: 1s;
+    display: flex;
+    cursor: pointer;
+}
+
+.mainContainer:hover {
+    transition: .2s;
+}
+
+.imagine {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    object-fit: cover;
+    border-radius: 5%;
+    border: 1px solid #37745B;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 5%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 45%, rgba(0, 0, 0, 1) 70%);
+    opacity: 0.5;
+
+    background-size: cover;
+}
+
+.mainContainer:hover > .gradient {
+    animation: 0.2s alternate darker;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 10%, rgba(0, 0, 0, 1) 50%);
+    opacity: 0.6;
+}
+
+@keyframes darker {
+    from {
+        background: linear-gradient(rgba(255, 255, 255, 0.1) 45%, rgba(0, 0, 0, 1) 70%);
+        opacity: 0.5;
+    }
+    to {
+        background: linear-gradient(rgba(255, 255, 255, 0.1) 10%, rgba(0, 0, 0, 0.8) 50%);
+        opacity: 0.6;
+    }
+}
+
+
+.nameContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: white;
+}
+
+
+.name {
+    color: white;
+    margin: 0 0.5rem 1rem .5rem;
+    font-size: 150%;
+    font-family: "Cremona", sans-serif;
+    text-align: center;
+}
+
+.nameContainer:hover > .name {
+    animation: rising .5s;
+    font-size: 155%;
+    border-bottom: 1px solid white;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes rising {
+    from {
+        font-size: 150%;
+        border-bottom: 0;
+    }
+    to {
+        font-size: 155%;
+        border-bottom: 1px solid white
+    }
+}
+
+
+.description {
+    width: calc(0.8 * var(--width));
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
+    margin: 0 5% 5%;
+    font-family: "Montserrat", sans-serif;
+    height: 3.5rem;
+    text-align: center;
+}
+
+.nameContainer:hover > .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    animation: shows .5s;
+}
+
+@keyframes shows {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.priceContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+.price {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+
+    font-size: 150%;
+    font-family: "Cremona", sans-serif;
+
+}
+
+.nameContainer:hover > .priceContainer > .oldPrice {
+
+    position: absolute;
+    left: 110%;
+
+}
+
+.nameContainer:hover > .priceContainer > .price {
+    animation: priceRising .5s;
+    font-size: 200%;
+    margin-bottom: 0.5rem;
+
+    font-weight: bold;
+
+    position: relative;
+    text-align: center;
+
+}
+
+@keyframes priceRising {
+    from {
+        font-size: 150%;
+        font-weight: normal;
+    }
+    to {
+        font-size: 200%;
+        font-weight: bold;
+    }
+
+}
+
+
+.oldPrice {
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    opacity: .8;
+}
+
+
+.nameContainer:hover > .priceContainer > .oldPrice {
+    display: -webkit-box;
+}
+
+

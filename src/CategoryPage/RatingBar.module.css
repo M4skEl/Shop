@@ -1,0 +1,26 @@
+.bookmark{
+    rotate: -90deg;
+    width: 3.4rem;
+    position: absolute;
+
+    top:-9.5%;
+    object-fit: cover;
+
+}
+
+.ratingContainer {
+    margin: 0;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    color: white;
+
+
+}
+.rating{
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    margin: 0;
+}

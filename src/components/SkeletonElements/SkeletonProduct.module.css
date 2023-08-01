@@ -1,0 +1,39 @@
+.cardSkeleton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.radio {
+    --picture-height: 150px;
+    --picture-width: 150px;
+    width: calc(1.1 * var(--picture-width));
+    margin: 0 5% 0 0;
+    padding: 3px 1% 0 1%;
+    height: calc(3 * var(--picture-height));
+    flex: .5;
+}
+
+.mainPictureContainer {
+    margin: 0 3% 3% 0;
+
+    align-items: start;
+    justify-content: center;
+    height: 400px;
+    flex: .5;
+}
+
+.textContainer {
+    max-width: 30%;
+    margin: 0 0 5% 3%;
+
+    flex: .5;
+}
+
+.skeleton {
+    margin-bottom: 0.6rem;
+    height: 2rem;
+}

@@ -1,0 +1,25 @@
+.buyButton{
+    height: 4rem;
+    width: 80%;
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    border: 1px solid #37745B;
+    background-color: #217074;
+    transition: .5s;
+
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Cremona','Montserrat', sans-serif;
+}
+.buyButton:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+.priceOnButton{
+    margin-left: 0.5rem;
+}

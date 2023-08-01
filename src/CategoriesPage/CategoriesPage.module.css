@@ -1,0 +1,22 @@
+.container {
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+
+}
+
+.CategoryContainer {
+    --height: 300px;
+    --width: 250px;
+    width: var(--width);
+    height: var(--height);
+
+    margin: calc(0.2*var(--width)) calc(0.2*var(--width)) calc(0.2*var(--width)) calc(0.2*var(--width));
+    display: flex;
+
+}
