@@ -1,7 +1,7 @@
 
 .hatContainer {
     display: block;
-
+    font-family: "Cremona", "Montserrat", sans-serif;
 
 
 }
@@ -22,17 +22,17 @@
     align-items: center;
     position: relative;
 
-    background: linear-gradient(40deg, rgba(33, 112, 116, 0.8) 0%, rgba(55, 116, 91, 0.8) 65%, rgba(108, 118, 96, 0.9) 100%);
-
+    //background: linear-gradient(40deg, rgba(33, 112, 116, 0.8) 0%, rgba(55, 116, 91, 0.8) 65%, rgba(108, 118, 96, 0.9) 100%);
+    background: linear-gradient(40deg, rgba(33, 112, 116, 0.8) 0%, rgba(55, 116, 91, 0.8) 50%, rgba(33, 112, 116, 0.9) 100%)
 }
 
 
 .headerText {
     margin: 0;
     padding: 0;
-    font-family: "Georgia", "Montserrat", sans-serif;
+    font-family: "Cremona", "Montserrat", sans-serif;
     color: white;
-    font-size: 450%;
+    font-size: 550%;
 }
 
 .photoContainer {

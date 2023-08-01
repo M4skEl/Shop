@@ -18,7 +18,7 @@ export const Hat = () => {
                 <img src="/shop/console.png" className={styles.photo} alt="ps5"/>
               </div>
               <div className={styles.hatSloganCont}>
-                <h1 className={styles.headerText}>Купите Все, Везде и Сразу!!!</h1>
+                <h1 className={styles.headerText}>Everything Everywhere All at Once</h1>
               </div>
             </div>
         }
