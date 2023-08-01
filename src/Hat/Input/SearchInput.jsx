@@ -63,7 +63,8 @@ export const SearchInput = () => {
   function keyHoverHandler(event) {
 
     if (event.key === "Enter" && hoveredIndex >= 0) {
-      navigate(`/${dropDownProducts[hoveredIndex].category}/${dropDownProducts[hoveredIndex].title}`)
+      setIsActive(false);
+      navigate(`/${dropDownProducts[hoveredIndex].category}/${dropDownProducts[hoveredIndex].title}`);
 
     }
 

@@ -12,6 +12,7 @@
     border-bottom: 1px solid #37745B;
     border-left: 1px solid #37745B;
     border-right: 1px solid #37745B;
+    background-color: white;
 }
 
 .dropDownContainer::-webkit-scrollbar {
